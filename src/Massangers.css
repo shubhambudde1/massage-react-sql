@@ -1,0 +1,86 @@
+.messenger-container {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 250px;
+    height: 100vh;
+    background-color: white;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+    border-left: 1px solid #e0e0e0;
+    overflow-y: auto;
+ 
+}
+
+.messenger-header {
+    padding: 15px;
+    border-bottom: 1px solid #e0e0e0;
+    background-color: white;
+}
+
+.messenger-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+    margin: 0;
+}
+
+.messenger-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 110px;
+}
+
+.messenger-item {
+    display: flex;
+    align-items: center;
+    padding: 12px 15px;
+    border-bottom: 1px solid #f0f0f0;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.messenger-item:hover {
+    background-color: #f5f5f5;
+}
+
+.messenger-item.selected {
+    background-color: #e3f2fd;
+    border-left: 4px solid #2196f3;
+}
+
+.messenger-avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: #4a90e2;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 12px;
+    font-weight: 600;
+}
+
+.messenger-username {
+    color: #333;
+    font-size: 14px;
+}
+
+/* Custom scrollbar styles */
+.messenger-container::-webkit-scrollbar {
+    width: 6px;
+}
+
+.messenger-container::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+.messenger-container::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 3px;
+}
+
+.messenger-container::-webkit-scrollbar-thumb:hover {
+    background: #666;
+}
